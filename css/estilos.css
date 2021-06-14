@@ -1,0 +1,157 @@
+* {
+  margin: 0px;
+  padding: 0px; }
+
+body {
+  background-color: #e1e2e4;
+  overflow-x: hidden;
+  font-family: "Roboto"; }
+
+.titulo {
+  color: #00204a;
+  font: 400 30px "Roboto"; }
+
+header {
+  margin-top: 60px; }
+
+.logo a {
+  text-decoration: none; }
+  .logo a h1 {
+    color: #00204a;
+    font: 400 40px "Roboto"; }
+  .logo a:hover {
+    text-decoration: none; }
+
+.buscar input {
+  font: 100 15px "Roboto";
+  border: none;
+  background: none;
+  outline: none;
+  border-bottom: 1px solid #7d7d7d;
+  width: 100%; }
+
+.buscar i {
+  font: 32px;
+  color: #7d7d7d;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #7d7d7d; }
+
+.btn-header {
+  font: 400 16px "Roboto"; }
+  .btn-header a {
+    color: #fff;
+    background: #3686e6;
+    padding: 10px 24px;
+    border-radius: 50px;
+    margin-right: 10px; }
+    .btn-header a:hover {
+      opacity: 0.7;
+      text-decoration: none; }
+  .btn-header .btn2 {
+    background: #3acace; }
+
+.carousel {
+  margin-top: 53px; }
+
+.carousel_contenedor {
+  position: relative; }
+
+.carousel_lista {
+  overflow: hidden; }
+
+.carousel_elemento {
+  margin: 0px 2px; }
+  .carousel_elemento .fondo_libro {
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%;
+    height: 350px; }
+
+.carousel_anterior, .carousel_siguiente {
+  position: absolute;
+  background: #e1e2e4;
+  display: block;
+  width: 30px;
+  height: 10%;
+  border: none;
+  top: calc(0% - 35px);
+  line-height: 30px;
+  text-align: center;
+  color: #7d7d7d;
+  font-size: 52px;
+  z-index: 1; }
+  .carousel_anterior:focus, .carousel_siguiente:focus {
+    outline: none; }
+
+.carousel_anterior {
+  padding: 200px 6% 188px 35px;
+  left: -10px; }
+
+.carousel_siguiente {
+  padding: 200px 60px 188px 4%;
+  right: -10px; }
+
+.fondo_blanco {
+  background-color: #fff; }
+
+.categorias_botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .categorias_botones div {
+    background: #3686e6;
+    border-radius: 50px;
+    padding: 10px 24px;
+    margin: 0px 10px;
+    text-align: center;
+    margin: 5px 5px; }
+    .categorias_botones div a {
+      text-decoration: none;
+      color: #fff; }
+
+.libros {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .libros img {
+    width: 100%; }
+  .libros h5 {
+    font: 500 130% "Roboto"; }
+  .libros p {
+    font: 100 italic 130% "Roboto"; }
+  .libros .star {
+    color: #FFDD00;
+    margin: 0px 6px; }
+
+.dos {
+  padding-bottom: 50px; }
+
+.fondo_azul {
+  background-color: #00204a; }
+  .fondo_azul h5 {
+    color: #e1e2e4;
+    font: 700 130% "Roboto";
+    margin-top: 35px; }
+  .fondo_azul p {
+    color: #3686e6;
+    font: 400 100% "Roboto"; }
+    .fondo_azul p a {
+      text-decoration: none; }
+
+@media screen and (max-width: 767px) {
+  .buscar, .btn-header {
+    margin-bottom: 30px; }
+    .buscar input, .btn-header input {
+      width: 80%; }
+  .categorias_botones, .libros {
+    display: block; }
+  .libros .libro {
+    margin: 5px auto; }
+  .enlaces h5, .enlaces p {
+    text-align: center; } }
+
+@media screen and (max-width: 576px) {
+  .carousel_anterior, .carousel_siguiente {
+    padding: 200px 0% 200px 0%; } }
+/*# sourceMappingURL=estilos.css.map */
