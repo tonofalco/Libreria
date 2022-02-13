@@ -1,0 +1,229 @@
+//========================================
+//Colores
+//========================================
+$azul_uno: #3acace
+$azul_dos: #3686e6
+$azul_tres: #00204a
+$gris: #7d7d7d
+$gris_blanco: #e1e2e4
+$oro: #FFDD00
+
+//========================================
+//GENERAL
+//========================================
+*
+    margin: 0px
+    padding: 0px
+
+body
+    background-color: $gris_blanco
+    overflow-x: hidden
+    font-family: "Roboto"
+
+.titulo
+    color: $azul_tres
+    font: 400 30px "Roboto"
+//========================================
+//HEADER
+//========================================
+header
+    margin-top: 60px
+
+.logo a
+    text-decoration: none
+    h1
+        color: $azul_tres
+        font: 400 40px "Roboto"
+    &:hover 
+        text-decoration: none
+
+.buscar 
+	input
+        font: 100 15px "Roboto"
+        border: none
+        background: none
+        outline: none
+        border-bottom: 1px solid $gris
+        width: 100%
+	i 
+        font: 32px
+        color: $gris
+        padding-bottom: 4px
+        border-bottom: 1px solid $gris
+
+.btn-header 
+	font: 400 16px "Roboto"
+	a 
+		color: #fff
+		background: $azul_dos
+		padding: 10px 24px
+		border-radius: 50px
+		margin-right: 10px
+		&:hover 
+			opacity: 0.7
+			text-decoration: none
+	.btn2 
+		background: $azul_uno
+
+//========================================
+//SLIDERSHOW
+//========================================
+.carousel 
+    margin-top: 53px
+    padding: 0px
+    .carousel_contenedor 
+        position: relative
+        .carousel_lista 
+            overflow: hidden
+            .carousel_elemento 
+                margin: 0px 0px
+                .fondo_libro 
+                    object-fit: cover
+                    width: 100%
+                    height: 350px
+
+.carousel_anterior, .carousel_siguiente 
+    background: none
+    cursor: pointer
+    position: absolute
+    display: block
+    width: 30px
+    height: 30px
+    border: none
+    top: calc(50% - 35px)
+    line-height: 30px
+    text-align: center
+    color: $gris_blanco
+    font-size: 52px
+    z-index: 1
+    &:focus 
+        outline: none
+
+.carousel_anterior
+    
+    left: 10px
+
+.carousel_siguiente 
+	
+	right: 10px
+
+.fondo1, .fondo2, .fondo3
+    background-image: url('../img/p1_fondo.jpg')
+    background-repeat: no-repeat
+    background-size: cover
+    background-position: center center
+    z-index: -1
+    align-items: center
+    h1
+        color: #f2f2f2
+        font: 700 italic 60px "Roboto"
+        -webkit-text-stroke: 0.3px black;
+    p  
+        color: $gris_blanco
+        font: 100 italic 20px "Roboto"
+        margin-right: 10px
+        text-shadow: 0px 3px 8px #000;
+        -webkit-text-stroke: 0.1px black;
+    img
+        width: 350px
+        margin: 15px auto
+
+.fondo1
+    background-image: url('../img/p1_fondo.jpg')
+
+.fondo2
+    background-image: url('../img/p2_fondo.jpg')
+
+.fondo3
+    background-image: url('../img/p3_fondo.jpg')
+
+//========================================
+//CATEGORIAS
+//========================================
+
+.fondo_blanco 
+	background-color: #fff
+
+.categorias_botones 
+    display: flex 
+    div
+        background: $azul_dos
+        border-radius: 50px
+        padding: 10px 24px
+        margin: 0px 10px
+        text-align: center
+        margin: 5px 5px
+        a
+            text-decoration: none
+            color: #fff
+
+//========================================
+//LOS MAS VENDIDOS
+//========================================
+.libros
+    text-align: center
+    display: flex 
+    img
+        width: 100%
+    h5
+        font: 500 130% "Roboto"
+    p
+        font: 100 italic 130% "Roboto"
+    .star
+        color: $oro
+        margin: 0px 6px
+
+.dos
+    padding-bottom: 50px
+
+//========================================
+//FOOTER
+//========================================
+.fondo_azul
+    background-color: $azul_tres
+    h5
+        color: $gris_blanco
+        font: 700 130% "Roboto"
+        margin-top: 35px
+    p
+        color: $azul_dos
+        font: 400 100% "Roboto"
+        a
+            text-decoration: none
+
+// ========================================
+// CAMBIOS RESPONSIVE
+// ========================================
+@media screen and ( max-width: 991px )
+    .fondo1, .fondo2, .fondo3
+        h1
+            font: 700 italic 50px "Roboto"
+        p  
+            font: 100 italic 18px "Roboto"
+
+
+
+@media screen and ( max-width: 767px )
+    .buscar, .btn-header
+        margin-bottom: 30px
+        input
+            width: 80%
+    .categorias_botones, .libros
+        display: block
+    .libros .libro
+            margin: 5px auto
+    .enlaces 
+        h5, p
+            text-align: center
+
+
+// @media screen and ( max-width: 576px )
+//     .carousel_anterior, .carousel_siguiente 
+//         padding: 200px 0% 200px 0%
+
+@media screen and ( max-width: 480px )
+    .fondo1, .fondo2, .fondo3
+        h1
+            font: 700 italic 40px "Roboto"
+        p  
+            font: 100 italic 10px "Roboto"

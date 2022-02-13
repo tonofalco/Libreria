@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;1,100;0,400;1,500;0,700;1,400&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.css">
+	<link rel="stylesheet" href="css/b5/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<link rel="icon" type="image/png" href="img/logo.png" />
+	<title>Libreria</title>
+</head>
+<body>
+	<!--=====================================
+	HEADER
+	======================================-->
+	<header>
+		<div class=" row d-flex align-items-center">
+			<div class="logo col-md-4 col-sm-12  d-flex justify-content-center">
+				<a href=""><h1>LIBRERIA</h1></a>
+			</div>
+			<div class="buscar col-md-3 col-sm-12  d-flex justify-content-center ">
+				<input type="text" placeholder="Buscar Libro">
+				<a href="#"><i class="fas fa-search"></i></a>	
+			</div>
+			<div class="btn-header col-md-5 col-sm-12  d-flex justify-content-center align-items-center">
+				<a style="text-decoration: none" href=""class="btn1">Iniciar Seccion</a>
+				<a style="text-decoration: none" href=""class="btn2">Registrate</a>	
+			</div>
+		</div>
+	</header>
+	<!--=====================================
+	SLIDERSHOW
+	======================================-->
+
+	<div class="container carousel">
+		<div class="carousel_contenedor">
+			<button aria-label="Anterior" class="carousel_anterior"><i class="fas fa-chevron-left"></i></button>
+			
+			<div class="carousel_lista">
+				<div class="carousel_elemento">
+					<div class="fondo1 d-flex ">
+						<div class="col-6 d-flex">
+							<img src="./img/p1.jpg" alt="Libro 1">
+						</div>
+						<div class="col-6">
+							<h1>Libro 1</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor voluptatem earum fugiat aliquam incidunt enim delectus ratione suscipit. Facere!</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel_elemento">
+					<div class="fondo2 d-flex ">
+						<div class="col-6 d-flex">
+							<img src="./img/p2.jpg" alt="Libro 2">
+						</div>
+						<div class="col-6">
+							<h1>Libro 2</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor voluptatem earum fugiat aliquam incidunt enim delectus ratione suscipit. Facere!</p>
+						</div>
+					</div>
+				</div>
+				<div class="carousel_elemento">
+					<div class="fondo3 d-flex ">
+						<div class="col-6 d-flex">
+							<img src="./img/p3.jpg" alt="Libro 3">
+						</div>
+						<div class="col-6">
+							<h1>Libro 3</h1>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat dolor voluptatem earum fugiat aliquam incidunt enim delectus ratione suscipit. Facere!</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<button aria-label="Siguiente" class="carousel_siguiente"><i class="fas fa-chevron-right"></i></i></button>
+		</div>
+		<!-- <div role="tablist" class="carousel__indicadores"></div> -->
+	</div>
+
+	<div class="fondo_blanco container">
+		<!--=====================================
+		CATEGORIAS
+		======================================-->
+		<div class="categorias row">	
+			<div class="col-12 d-flex justify-content-center mt-3"><h5 class="titulo">Categorias</h5></div>
+		</div>
+		<div class="row">
+			<div class="categorias_botones justify-content-center mt-2">
+				<div style="background: #3686E6;" class="col-md-2 col-12"><a href="">Negocios</a></div>
+				<div style="background: #F2BA00;" class="col-md-2 col-12"><a href="">Autoayuda</a></div>
+				<div style="background: #49CB8E;" class="col-md-2 col-12"><a href="">Ficcion</a></div>
+				<div style="background: #3ACACE" class="col-md-2 col-12"><a href="">Fantasia</a></div>
+				<div style="background: #E61000" class="col-md-2 col-12"><a href="">Misterio</a></div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="categorias_botones justify-content-center">
+				<div style="background: #AC36E6" class="col-md-2 col-12"><a href="">Ciencia</a></div>
+				<div style="background: #E63642" class="col-md-2 col-12"><a href="">Salud</a></div>
+				<div style="background: #36E65F" class="col-md-2 col-12"><a href="">Licenciatura</a></div>
+				<div style="background: #8EE636" class="col-md-2 col-12"><a href="">Historia</a></div>
+				<div style="background: #E63694" class="col-md-2 col-12"><a href="">Suspenso</a></div>
+			</div>
+		</div>
+		<!--=====================================
+		LOS MAS VENDIDOS
+		======================================-->
+		<div class="categorias row">	
+			<div class="col-12 d-flex justify-content-center mt-5"><h5 class="titulo">Los Mas vendidos</h5></div>
+		</div>
+		<div class="libros justify-content-around mt-3">
+			<div class="col-md-2 col-8 libro">
+				<img src="img/li1.jpg">
+				<h5>Lorem ipsum dolor sit</h5>
+				<p>por Luis antonio</p>
+				<div class="estrellas">
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+				</div>	
+			</div>
+			<div class="col-md-2 col-8 libro">
+				<img src="img/li2.jpg">
+				<h5>Lorem ipsum dolor sit</h5>
+				<p>por Luis antonio</p>
+				<div class="estrellas">
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+				</div>	
+			</div>
+			<div class="col-md-2 col-8 libro">
+				<img src="img/li3.jpg">
+				<h5>Lorem ipsum dolor sit</h5>
+				<p>por Luis antonio</p>
+				<div class="estrellas">
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+				</div>	
+			</div>
+			<div class="col-md-2 col-8 libro">
+				<img src="img/li4.jpg">
+				<h5>Lorem ipsum dolor sit</h5>
+				<p>por Luis antonio</p>
+				<div class="estrellas">
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+				</div>	
+			</div>
+			<div class="col-md-2 col-8 libro">
+				<img src="img/li5.jpg">
+				<h5>Lorem ipsum dolor sit</h5>
+				<p>por Luis antonio</p>
+				<div class="estrellas">
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+				</div>	
+			</div>
+			
+		</div>
+		<div class="libros dos justify-content-around mt-5">
+			<div class="col-md-2 col-8 libro">
+				<img src="img/li6.jpg">
+				<h5>Lorem ipsum dolor sit</h5>
+				<p>por Luis antonio</p>
+				<div class="estrellas">
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+				</div>	
+			</div>
+			<div class="col-md-2 col-8 libro">
+				<img src="img/li7.jpg">
+				<h5>Lorem ipsum dolor sit</h5>
+				<p>por Luis antonio</p>
+				<div class="estrellas">
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+				</div>	
+			</div>
+			<div class="col-md-2 col-8 libro">
+				<img src="img/li4.jpg">
+				<h5>Lorem ipsum dolor sit</h5>
+				<p>por Luis antonio</p>
+				<div class="estrellas">
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+				</div>	
+			</div>
+			<div class="col-md-2 col-8 libro">
+				<img src="img/li9.jpg">
+				<h5>Lorem ipsum dolor sit</h5>
+				<p>por Luis antonio</p>
+				<div class="estrellas">
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+				</div>	
+			</div>
+			<div class="col-md-2 col-8 libro">
+				<img src="img/li10.jpg">
+				<h5>Lorem ipsum dolor sit</h5>
+				<p>por Luis antonio</p>
+				<div class="estrellas">
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+					<a href="" class="star"><i class="fas fa-star"></i></a>
+				</div>	
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<div class="fondo_azul container">
+			<div class="row">
+				<div class="col-md-6 col-12 d-flex justify-content-center">
+					<img src="img/logo.png" alt="logo">
+				</div>
+				<div class="col-md-3 col-12 enlaces align-items-center">
+					<h5>Informacion y Ayuda</h5>
+					<p><a href="">Lorem ipsum dolor consectetur.</a></p>
+					<p><a href="">Lorem ipsum dolor consectetur.</a></p>
+					<p><a href="">Lorem ipsum dolor consectetur.</a></p>
+					<p><a href="">Lorem ipsum dolor</a></p>
+				</div>
+				<div class="col-md-3 col-12 enlaces align-items-center">
+					<h5>Contacto</h5>
+					<p><a href="">Lorem ipsum dolor consectetur.</a></p>
+					<p><a href="">Lorem ipsum dolor consectetur.</a></p>
+					<p><a href="">Lorem ipsum dolor consectetur.</a></p>
+					<p><a href="">Lorem ipsum dolor</a></p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script src="https://cdn.jsdelivr.net/npm/glider-js@1.7.3/glider.min.js"></script>
+	<script src="js/b5/bootstrap.min.js"></script>
+	<script src="js/slider/slidershow.js"></script>
+</body>
+</html>
